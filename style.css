@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: -webkit-linear-gradient(
+    top,
+    #03258c,
+    #03318c,
+    #05dbf2,
+    #f2e205,
+    #d90404,
+    #d90404
+  );
+  text-align: center;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
