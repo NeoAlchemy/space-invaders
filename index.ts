@@ -620,18 +620,11 @@ class CannonController extends InputController {
       },
       false
     );
-
-    document.addEventListener(
-      'keyup',
-      (evt) => {
-        this.command = null;
-      },
-      false
-    );
   }
 
   update(gameObject: GameObject) {
     gameObject.command = this.command;
+    this.command = null;
   }
 }
 
