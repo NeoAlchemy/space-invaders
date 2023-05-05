@@ -506,6 +506,7 @@ class Laser extends GameObject {
     if (this.isReady()) {
       this.x = x;
       this.y = y;
+      clearInterval(this.timerId);
       this.timerId = setInterval(() => {
         this.y -= 5;
       }, LASER_SPEED);
